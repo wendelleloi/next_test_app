@@ -1,0 +1,78 @@
+.headerContainer {
+  height: 5rem;
+  background-color: var(--black-background);
+}
+
+.headerContent {
+  max-width: 1120px;
+  height: 5rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttonsContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    font-family: "OpenSans";
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+
+.navContent {
+  display: flex;
+  nav {
+    height: 5rem;
+    margin-left: 5.6rem;
+
+    a {
+      display: inline-block;
+      position: relative;
+
+      padding: 0 0.5rem;
+      height: 5rem;
+      line-height: 5rem;
+
+      font-family: "OpenSans";
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--white);
+
+      transition: color 0.2s;
+
+      & + a {
+        margin-left: 2rem;
+      }
+
+      &:hover {
+        color: var(--white);
+      }
+
+      &.active {
+        color: var(--white);
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.loginButton {
+  background-color: transparent;
+  margin-right: 1.9rem;
+  color: var(--white);
+  border: none;
+  padding: 1rem;
+}
+
+.singInButton {
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+  padding: 1rem;
+}

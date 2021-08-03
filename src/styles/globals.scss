@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+a,
+p,
+button {
+  font: 300 1rem "OpenSans", Montserrat;
+}
+
+p,
+h1,
+h2 {
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+:root {
+  --white: #ffffff;
+  --black-background: #212121;
+  --gray-title: #616161;
+  --green: #00bb4f;
+  --text-color: var(--black-background);
+}
+
+// 16px tamanho da fonte padrão
+// 16 x 0.9375 = 15
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+// 16px tamanho da fonte padrão
+// 16 x 0.875 = 14
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
